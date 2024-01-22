@@ -1,0 +1,14 @@
+<div class="loginForm">
+    <form method="POST">
+        {% csrf_token %}
+            <div class="form-group">
+                <label>Usuario</label>
+                <input type="text" class="form-control" placeholder="Usuario" name="username">
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" class="form-control" placeholder="Contraseña" name="password">
+            </div>
+            <button type="submit" class="btn btn-success">Iniciar sesión</button>
+    </form>
+</div>
